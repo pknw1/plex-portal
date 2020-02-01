@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Enter commit message: " COMM
+git add .
+git commit -m "${COMM}"

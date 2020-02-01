@@ -2,7 +2,7 @@
 
 if [ ! -d ~/.ssh ]; then mkdir -p ~/.ssh; fi
 
-cat >> ~/.ssh/config << EOF
+cat <<EOF >> ~/.ssh/config
 Host *
     Port 22
     IdentityFile ~/.ssh/id_rsa
@@ -13,5 +13,4 @@ Host github.com
         Port 22
         IdentityFile ~/.ssh/id_rsa_github
 EOF
-
-exit 
+ 

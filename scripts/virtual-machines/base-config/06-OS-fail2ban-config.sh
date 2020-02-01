@@ -1,5 +1,5 @@
 #!/bin/bash
-IP=$(who --ips | awk '{print $5}')
+source ./variables.sh
 
 cat /etc/fail2ban/fail2ban.conf | grep -v "#" > /etc/fail2ban/jail.local
 touch /var/log/auth-ssh.log

@@ -1,5 +1,5 @@
 #!/bin/bash
-IP=$(who --ips | awk '{print $5}')
+source ./variables.sh
 
 sudo iptables -A INPUT -s "${IP}" -j ACCEPT
 sudo iptables -A OUTPUT -s "${IP}" -j ACCEPT

@@ -1,4 +1,6 @@
 #!/bin/bash
+find . -iname *.sh -exec dos2unix '{}' \;
 read -p "Enter commit message: " COMM
 git add .
 git commit -m "${COMM}"
+git push

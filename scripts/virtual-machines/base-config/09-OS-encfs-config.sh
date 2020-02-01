@@ -41,9 +41,10 @@ EOF
 
 echo "current password is set to password"
 echo " "
-sudo encfsctl;passwd /
+sudo encfsctl passwd /
 
 echo "update auto-password script"
 read -p "Please enter the password again: " ENCFSPASSWD
-echo "echo "$ENCFSPASSWD > /encfspasswd
+sudo echo "echo "$ENCFSPASSWD > /encfspasswd 
+sudo chmod +x /encfspasswd
 

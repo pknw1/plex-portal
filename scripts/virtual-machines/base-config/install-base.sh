@@ -10,3 +10,5 @@ source ./variables.sh
 ./06-OS-fail2ban-config.sh
 ./07-OS-shellinabox-config.sh
 ./08-OS-xrdp-config.sh
+./09-OS-rclone.sh
+./10-OS-encfs-config.sh

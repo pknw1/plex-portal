@@ -1,7 +1,6 @@
 #!/bin/bash
-IP=$(who --ips | awk '{print $5}')
-PASSWORD=password
+export P=$(who --ips | awk '{print $5}')
+export PASSWORD=password
 declare -a USERS=("plex" "docker")
-GRID=666
-URID=666
-PASSWORD=password
+export GRID=666
+export URID=666

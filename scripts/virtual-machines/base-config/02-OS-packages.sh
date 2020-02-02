@@ -8,5 +8,5 @@
 # NFS
 # Git
 # wget/curl
-
+export DEBIAN_FRONTEND=noninteractive
 sudo aptitude install -y --assume-yes encfs git wget certbot nfs-kernel-server nfs-common xfce4 xfce4-goodies xfdesktop4 xrdp apt-transport-https ca-certificates curl gnupg-agent software-properties-common

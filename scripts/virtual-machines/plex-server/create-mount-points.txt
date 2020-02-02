@@ -1,9 +1,9 @@
 #!/bin/bash
-mkdir -p /plex/movies
-mkdir -p /plex/tv
-mkdir -p /mnt/movies-enc
-mkdir -p /mnt/tv-enc
+sudo mkdir -p /plex/movies
+sudo mkdir -p /plex/tv
+sudo mkdir -p /mnt/movies-enc
+sudo mkdir -p /mnt/tv-enc
 
-chown -R plex:plex /plex
-chown plex:plex /mnt/*enc
+sudo chown -R plex:plex /plex
+sudo chown plex:plex /mnt/*enc
 
